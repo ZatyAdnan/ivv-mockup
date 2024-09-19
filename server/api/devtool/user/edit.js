@@ -5,7 +5,7 @@ export default defineEventHandler(async (event) => {
     // Update user
     const user = await prisma.user.updateMany({
       where: {
-        userUsername: body.username,
+        userID: parseInt(id),
       },
       data: {
         userFullName: body?.fullname || "",
