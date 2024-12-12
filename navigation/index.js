@@ -101,4 +101,55 @@ export default [
       },
     },
   },
+  {
+    header: "",
+    description: "",
+    child: [
+      {
+        title: "Document Management",
+        path: "/document-management",
+        icon: "material-symbols:lab-profile-rounded",
+        child: [],
+        meta: {
+          auth: {
+            role: ["Reviewer"],
+          },
+        },
+      },
+    ],
+  },
+  {
+    header: "",
+    description: "",
+    child: [
+      {
+        title: "Document Self Scanner",
+        path: "/self-scanner",
+        icon: "material-symbols-light:document-scanner-rounded",
+        child: [],
+        meta: {
+          auth: {
+            role: ["Reviewer"],
+          },
+        },
+      },
+    ],
+  },
+  {
+    header: "",
+    description: "",
+    child: [
+      {
+        title: "Configuration",
+        path: "/configuration",
+        icon: "material-symbols:settings",
+        child: [],
+        meta: {
+          auth: {
+            role: ["Reviewer"],
+          },
+        },
+      },
+    ],
+  },
 ];
