@@ -6,6 +6,7 @@ export default defineNuxtConfig({
       secretRefresh: process.env.NUXT_REFRESH_TOKEN_SECRET,
     },
   },
+
   modules: [
     "@nuxtjs/tailwindcss",
     "@formkit/nuxt",
@@ -19,9 +20,11 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "@davestewart/nuxt-scrollbar",
   ],
+
   app: {
     pageTransition: { name: "page", mode: "out-in" },
   },
+
   head: {
     title: "corrad",
     meta: [
@@ -35,7 +38,9 @@ export default defineNuxtConfig({
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
+
   css: ["~/assets/style/scss/main.scss"],
+
   tailwindcss: {
     cssPath: "~/assets/style/css/tailwind.css",
     configPath: "tailwind.config",
@@ -44,9 +49,11 @@ export default defineNuxtConfig({
     injectPosition: 0,
     viewer: false,
   },
+
   formkit: {
     defaultConfig: true,
   },
+
   pwa: {
     registerType: "autoUpdate",
     workbox: {
@@ -519,6 +526,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   security: {
     // GLOBAL SECURITY OPTIONS
 
@@ -532,6 +540,7 @@ export default defineNuxtConfig({
     },
     headers: false,
   },
+
   routeRules: {
     "/api/devtool/**": {
       security: {
@@ -540,4 +549,6 @@ export default defineNuxtConfig({
       },
     },
   },
+
+  compatibilityDate: "2025-01-02",
 });
