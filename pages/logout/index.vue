@@ -6,10 +6,7 @@ definePageMeta({
   layout: "empty",
 });
 
-if (process.client) {
-
-  navigateTo("/login");
-}
+navigateTo("/login");
 </script>
 
 <template>
